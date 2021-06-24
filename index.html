@@ -9,8 +9,17 @@
 </head>
 
 <body>
+	<img  class="dark dk" style="max-width: 35px; max-height: 35px; position: sticky;" 
+			src="./img/darmmodbutton.png" onclick="darkMode()" alt="drkm">
+
+	<script>
+		function darkMode() {
+		   var element = document.body;
+		   element.classList.toggle("dark-mode");
+		}
+	</script>
 	<div id="bigtxt">
-		<h1 id="name">Yovanofski Alexis</h1>
+		<h1 id="name">{{ name }}</h1>
 	</div>	
 
 	<div id="profil" class="frame">
@@ -23,6 +32,21 @@
 		</h3>
 	</div>
 
+
+	<footer>
+		<div>
+			<nav style="text-align: center;">
+				<a href="">To linkdin</a>
+				<a href="">To CodinGame</a>
+				<a href="">To Twitter</a>
+				
+			</nav>
+		</div>
+	</footer>
+	<div style="text-align: center; margin: 30px;">
+		<a href = "mailto: abc@example.com"><button class="button button2">Contact me</button></a>
+		<button onclick="darkMode()" >dark me</button>
+	</div>
 </body>
 
 </html>

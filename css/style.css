@@ -2,7 +2,48 @@ img#profil {
 	width: 320px;
 	height: 320px;
 	border-radius: 50%;
-	transition: 6s;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	/* transition: 6s;*/
+}
+
+.dark {
+	position:-webkit-sticky; 
+	position:sticky; 
+	top:0;
+	max-width: 35px;
+	max-height: 35px;
+	border-radius: 50%;
+	border: none;
+	color: white;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.dk:hover {
+	box-shadow: 10px 12px 16px 0 rgba(0, 0, 0, 0.61),12px 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button {
+	background-color: grey; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.button2:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 div#profil {
@@ -11,16 +52,26 @@ div#profil {
 
 h1#name {
 	font-family: 'Times New Roman', Times, serif;
-	transition: 6s;
+	/*transition: 6s;*/
 	text-align: center;
 	padding-top: 50px;
 }
 
+
 body {
-	background-image: url(../img/Background-website-01.jpg);
-	background-position: top;
+	background: linear-gradient(#e66465, #9198e5);
+	background-size: cover;
+	color: black;
+	width: auto;
+	height: auto;
 	background-repeat: no-repeat;
 }
+
+.dark-mode {
+	background: linear-gradient(black, #9198e5);
+	color: white;
+  }
+
 
 #txt {
 	padding: 30px;
@@ -35,6 +86,7 @@ body {
 	background: #eee;
 	margin: auto;
 }
+
 img {
 	width: 100%;
 	height: 100%;
